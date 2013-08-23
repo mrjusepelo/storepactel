@@ -8,18 +8,16 @@ gem "json", "~> 1.8.0"
 # Postgresql
 gem "pg", "~> 0.15.1"
 
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
-
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-gem "therubyracer"
-gem "less-rails"
-gem 'twitter-bootstrap-rails'
-
-
-# Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+	gem 'sass-rails', '~> 4.0.0'
+	gem "therubyracer"
+	gem "less-rails"
+	gem 'twitter-bootstrap-rails'
+  gem 'coffee-rails', '~> 4.0.0'
+  gem 'uglifier', '>= 1.3.0'
+end
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
